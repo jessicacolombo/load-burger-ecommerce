@@ -4,9 +4,3 @@
   font-size: var(--heading-2);
   margin: 10px 0px 15px 0px;
 }
-
-.logo > span {
-  color: var(--color-secondary);
-  font-size: var(--heading-2);
-  padding: 0 6px;
-}

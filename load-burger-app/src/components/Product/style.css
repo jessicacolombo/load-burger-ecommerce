@@ -49,7 +49,7 @@
 }
 
 .card-item__box_text > p {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: var(--body);
 }
 

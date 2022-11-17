@@ -4,7 +4,7 @@
   overflow: auto;
   align-items: center;
   gap: 15px;
-  margin: 20px;
+  margin: 20px 10px 70px 20px;
 }
 
 ::-webkit-scrollbar {

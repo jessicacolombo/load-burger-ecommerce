@@ -53,7 +53,7 @@ export function Product({
           </button>
         </div>
       </li>
-      <ToastContainer position="bottom-right" autoClose={5000} />
+      <ToastContainer position="bottom-right" autoClose={2000} />
     </>
   );
 }
