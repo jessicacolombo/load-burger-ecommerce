@@ -1,13 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
     :root{
         /*Colors*/
-        --color-primary: #27ae60;
-        --color-primary-50: #93D7AF;
-        --color-secondary: #EB5757;
+        --color-primary: #ffcd07;
+        --color-primary-50: #ffcd00;
+        --color-secondary:  #E60000;
         --grey-100: #333333;
         --grey-50: #828282;
         --grey-20: #E0E0E0; 
@@ -22,14 +21,9 @@ export const GlobalStyle = createGlobalStyle`
         --body: 14px;
         --caption: 12px; 
 
-        /*Feedback Palete*/
-        --negative: #E60000;
-        --warning: #FFCD07;
-        --success: #168821;
-        --information: #155BCB;
     }
 
     body, ul, li, h1, h2{
         font-family: 'Inter', sans-serif;
     }
-`
+`;
