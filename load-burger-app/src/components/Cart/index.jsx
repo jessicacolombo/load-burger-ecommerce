@@ -19,6 +19,7 @@ export function Cart({ currentSale, setCurrentSale }) {
                       name={elem.name}
                       category={elem.category}
                       img={elem.img}
+                      quantity={elem.quantity}
                       currentSale={currentSale}
                       setCurrentSale={setCurrentSale}
                     />

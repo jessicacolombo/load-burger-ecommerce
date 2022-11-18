@@ -14,16 +14,27 @@ export function Product({
   function addProductToCart(newProduct) {
     if (!currentSale.some((element) => element.id === newProduct.id)) {
       setCurrentSale((previousSales) => [...previousSales, newProduct]);
-    } else {
-      toast.error("Produto já adicionado!", {
+      toast.success("Produto adicionado ao carrinho!", {
         position: "bottom-right",
-        autoClose: 5000,
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
       });
+    } else {
+      const productIndex = currentSale.findIndex(
+        (element) => element.id === newProduct.id
+      );
+      const updatedList = currentSale.map((obj, index) => {
+        if (index === productIndex) {
+          return { ...obj, quantity: obj.quantity + 1 };
+        }
+        return obj;
+      });
+
+      setCurrentSale(updatedList);
     }
   }
 
@@ -46,6 +57,7 @@ export function Product({
                 category: category,
                 price: price,
                 img: img,
+                quantity: 1,
               })
             }
           >

@@ -24,11 +24,11 @@
 .div-text-cart {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 8px;
 }
 
 .div-text-cart > h2 {
-  margin-top: 10px;
+  margin-top: 4px;
   font-weight: 700;
   color: var(--grey-100);
   font-size: var(--heading-4);
@@ -37,6 +37,17 @@
 .div-text-cart > span {
   font-size: var(--caption);
   color: var(--grey-50);
+}
+
+.div-text-cart__qtt {
+  font-size: var(--caption);
+  background-color: var(--color-secondary);
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
 }
 
 .cart-card > button {
